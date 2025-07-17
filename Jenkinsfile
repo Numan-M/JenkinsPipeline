@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage("Make a directory") {
             options {
-                timeout(time: 1, unit: "minutes") // stage
+                timeout(time: 1, unit: java.util.concurrent.TimeUnit.MINUTES) // stage
             }
             steps {
                 sh "mkdir ~/jenkins_test_dir" // create a directory in the home folder
