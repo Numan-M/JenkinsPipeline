@@ -7,7 +7,7 @@ pipeline {
                 sh "ls"
             }
         }
-        stage(‘second stage’){
+        stage('second stage'){
             steps {
                 sh “pwd”
             }
